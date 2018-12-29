@@ -1,0 +1,6 @@
+framework module Pods_WXActionSheetDemo {
+  umbrella header "Pods-WXActionSheetDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

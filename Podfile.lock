@@ -1,0 +1,16 @@
+PODS:
+  - WXActionSheet (0.0.1)
+
+DEPENDENCIES:
+  - WXActionSheet (from `DevelopmentPods/WXActionSheet`)
+
+EXTERNAL SOURCES:
+  WXActionSheet:
+    :path: DevelopmentPods/WXActionSheet
+
+SPEC CHECKSUMS:
+  WXActionSheet: 91924dcac0a5a1f33cf18f9eb98e7cd3a92ed1f8
+
+PODFILE CHECKSUM: 5187059f373cd514f955c77d0e7ad5d49d7cbb8f
+
+COCOAPODS: 1.6.0.beta.2
