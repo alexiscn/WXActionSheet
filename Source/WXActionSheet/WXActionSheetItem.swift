@@ -22,7 +22,7 @@ public class WXActionSheetItem {
     public var imageEdgeInsets: UIEdgeInsets = .zero
     public var titleEdgeInsets: UIEdgeInsets = .zero
     public var fontSize: CGFloat = 17
-    public var titleColor: UIColor = .black
+    public var titleColor: UIColor = WXActionSheet.Preferences.ButtonTitleColor
     
     public var type: ItemType = .default
     public var handler: WXActionSheetHandler? = nil

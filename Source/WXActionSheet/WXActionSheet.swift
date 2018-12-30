@@ -16,7 +16,7 @@ public class WXActionSheet: UIView {
         /// Height for buttons, defaults 50.0
         public static var ButtonHeight: CGFloat = 50.0
         
-        public static var ButtonNormalBackgroundColor = UIColor(white: 1, alpha: 0.9)
+        public static var ButtonNormalBackgroundColor = UIColor(white: 1, alpha: 0.8)
         
         public static var ButtonHighlightBackgroundColor = UIColor(white: 1, alpha: 0.5)
         
@@ -29,8 +29,6 @@ public class WXActionSheet: UIView {
         /// Separator backgroundColor between CancelButton and other buttons
         public static var SeparatorColor = UIColor(white: 153.0/255, alpha: 1.0)
     }
-    
-    public var name: String? = nil
     
     private let containerView = UIView()
     private let backgroundView = UIView()
