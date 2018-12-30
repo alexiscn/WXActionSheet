@@ -23,7 +23,7 @@ class PresentViewController: UIViewController {
     
     @objc private func handleLongPressGesture(_ gesture: UILongPressGestureRecognizer) {
         if gesture.state == .began {
-            let actionSheet = WXActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", buttonTitles: "发送给..", "收藏", "保存图片", "编辑")
+            let actionSheet = WXActionSheet(delegate: self, cancelButtonTitle: "取消", buttonTitles: "发送给..", "收藏", "保存图片", "编辑")
             actionSheet.show()
         }
     }

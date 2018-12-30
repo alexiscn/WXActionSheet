@@ -60,13 +60,17 @@ public class WXActionSheet: UIView {
     private var items: [WXActionSheetItem] = []
     private let LineHeight: CGFloat = 1.0/UIScreen.main.scale
     
-    public init(title: String?, delegate: WXActionSheetDelegate, cancelButtonTitle: String, buttonTitles: String...) {
+    public init(title: String?, delegate: WXActionSheetDelegate, cancelButtonTitle: String, buttonTitles: [String]) {
         let frame = UIScreen.main.bounds
         super.init(frame: frame)
         self.delegate = delegate
         items = buttonTitles.map { return WXActionSheetItem(title: $0) }
         items.append(WXActionSheetItem(title: cancelButtonTitle))
         commonInit()
+    }
+    
+    public convenience init(delegate: WXActionSheetDelegate, cancelButtonTitle: String, buttonTitles: String...) {
+        self.init(title: nil, delegate: delegate, cancelButtonTitle: cancelButtonTitle, buttonTitles: buttonTitles)
     }
     
     required public init?(coder aDecoder: NSCoder) {
