@@ -8,6 +8,8 @@
 
 import UIKit
 
+public typealias WXActionSheetHandler = ((WXActionSheet) -> Void)
+
 public class WXActionSheetItem {
     
     public enum ItemType {
@@ -19,20 +21,16 @@ public class WXActionSheetItem {
     public var title: String?
     public var imageEdgeInsets: UIEdgeInsets = .zero
     public var titleEdgeInsets: UIEdgeInsets = .zero
-    public var fontSize: CGFloat = 15
+    public var fontSize: CGFloat = 17
     public var titleColor: UIColor = .black
     
     public var type: ItemType = .default
+    public var handler: WXActionSheetHandler? = nil
     
-    public init(title: String, type: ItemType = .default) {
+    public init(title: String, handler: WXActionSheetHandler? = nil, type: ItemType = .default) {
         self.title = title
+        self.handler = handler
         self.type = type
-    }
-    
-    public init(title: String, fontSize: CGFloat = 15.0, titleColor: UIColor = UIColor.black) {
-        self.title = title
-        self.fontSize = fontSize
-        self.titleColor = titleColor
     }
     
 }

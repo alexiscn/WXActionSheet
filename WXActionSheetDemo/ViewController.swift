@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WXActionSheet
 
 class ViewController: UITableViewController {
 
@@ -19,7 +20,20 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
-        
+        if indexPath.section == 0 && indexPath.row == 1 {
+            normal()
+        }
+    }
+    
+    private func normal() {
+        let actionSheet = WXActionSheet(cancelButtonTitle: "取消")
+        actionSheet.append(WXActionSheetItem(title: "删除", handler: { _ in
+            
+        }, type: .destructive))
+//        actionSheet.append(WXActionSheetItem(title: "取消", handler: { _ in
+//            
+//        }, type: .cancel))
+        actionSheet.show()
     }
 
 }

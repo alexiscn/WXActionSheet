@@ -10,7 +10,6 @@
 		7C6ED83945263577B18D0146 /* Pods_WXActionSheetDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFDFEB460B17517A32E9F39 /* Pods_WXActionSheetDemo.framework */; };
 		A37448D021D75BBA0091E236 /* WKWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37448CF21D75BBA0091E236 /* WKWebViewViewController.swift */; };
 		A37448D221D75BD60091E236 /* InputAccessViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37448D121D75BD60091E236 /* InputAccessViewViewController.swift */; };
-		A37448D421D75BE90091E236 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37448D321D75BE90091E236 /* PresentViewController.swift */; };
 		A39CB03721D38EF30009F313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CB03621D38EF30009F313 /* AppDelegate.swift */; };
 		A39CB03921D38EF30009F313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CB03821D38EF30009F313 /* ViewController.swift */; };
 		A39CB03C21D38EF30009F313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39CB03A21D38EF30009F313 /* Main.storyboard */; };
@@ -24,7 +23,6 @@
 		70C3644FF8DC2444E9D2C8BB /* Pods-WXActionSheetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXActionSheetDemo.debug.xcconfig"; path = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A37448CF21D75BBA0091E236 /* WKWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewViewController.swift; sourceTree = "<group>"; };
 		A37448D121D75BD60091E236 /* InputAccessViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAccessViewViewController.swift; sourceTree = "<group>"; };
-		A37448D321D75BE90091E236 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 		A39CB03321D38EF30009F313 /* WXActionSheetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXActionSheetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39CB03621D38EF30009F313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39CB03821D38EF30009F313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 			children = (
 				A37448CF21D75BBA0091E236 /* WKWebViewViewController.swift */,
 				A37448D121D75BD60091E236 /* InputAccessViewViewController.swift */,
-				A37448D321D75BE90091E236 /* PresentViewController.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -245,7 +242,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A37448D021D75BBA0091E236 /* WKWebViewViewController.swift in Sources */,
-				A37448D421D75BE90091E236 /* PresentViewController.swift in Sources */,
 				A39CB03921D38EF30009F313 /* ViewController.swift in Sources */,
 				A39CB03721D38EF30009F313 /* AppDelegate.swift in Sources */,
 				A37448D221D75BD60091E236 /* InputAccessViewViewController.swift in Sources */,

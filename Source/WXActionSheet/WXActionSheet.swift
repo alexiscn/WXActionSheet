@@ -8,27 +8,6 @@
 
 import UIKit
 
-@objc
-public protocol WXActionSheetDelegate: class {
- 
-    /// User tapped cancel button
-    ///
-    /// - Parameter actionSheet: actionSheet
-    @objc optional func actionSheetCancel(_ actionSheet: WXActionSheet)
-    
-    /// User tapped outside to dismiss WXActionSheet
-    ///
-    /// - Parameter actionSheet: actionSheet
-    @objc optional func actionSheetTapOutside(_ actionSheet: WXActionSheet)
-    
-    /// User tapped button event
-    ///
-    /// - Parameters:
-    ///   - actionSheet: actionSheet
-    ///   - index: button index
-    @objc optional func actionSheet(_ actionSheet: WXActionSheet, clickedButtonAtIndex index: Int)
-}
-
 public class WXActionSheet: UIView {
     
     /// WXActionSheet defaults, you can override it globally
@@ -37,7 +16,7 @@ public class WXActionSheet: UIView {
         /// Height for buttons, defaults 50.0
         public static var ButtonHeight: CGFloat = 50.0
         
-        public static var ButtonNormalBackgroundColor = UIColor(white: 1, alpha: 0.7)
+        public static var ButtonNormalBackgroundColor = UIColor(white: 1, alpha: 0.9)
         
         public static var ButtonHighlightBackgroundColor = UIColor(white: 1, alpha: 0.5)
         
@@ -50,8 +29,6 @@ public class WXActionSheet: UIView {
         /// Separator backgroundColor between CancelButton and other buttons
         public static var SeparatorColor = UIColor(white: 153.0/255, alpha: 1.0)
     }
- 
-    public weak var delegate: WXActionSheetDelegate?
     
     public var name: String? = nil
     
@@ -59,18 +36,13 @@ public class WXActionSheet: UIView {
     private let backgroundView = UIView()
     private var items: [WXActionSheetItem] = []
     private let LineHeight: CGFloat = 1.0/UIScreen.main.scale
+    private var cancelButtonTitle: String?
     
-    public init(title: String?, delegate: WXActionSheetDelegate, cancelButtonTitle: String, buttonTitles: [String]) {
+    public init(cancelButtonTitle: String? = nil) {
         let frame = UIScreen.main.bounds
         super.init(frame: frame)
-        self.delegate = delegate
-        items = buttonTitles.map { return WXActionSheetItem(title: $0) }
-        items.append(WXActionSheetItem(title: cancelButtonTitle))
+        self.cancelButtonTitle = cancelButtonTitle
         commonInit()
-    }
-    
-    public convenience init(delegate: WXActionSheetDelegate, cancelButtonTitle: String, buttonTitles: String...) {
-        self.init(title: nil, delegate: delegate, cancelButtonTitle: cancelButtonTitle, buttonTitles: buttonTitles)
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -110,6 +82,10 @@ public class WXActionSheet: UIView {
     public func appendDestructiveButton(title: String) {
         items.append(WXActionSheetItem(title: title, type: .default))
     }
+    
+    public func append(_ item: WXActionSheetItem) {
+        items.append(item)
+    }
 }
 
 
@@ -138,9 +114,13 @@ extension WXActionSheet {
     
     private func buildUI() {
         
+        if let cancelTitle = cancelButtonTitle, !items.contains(where: { $0.type == .cancel }) {
+            items.append(WXActionSheetItem(title: cancelTitle, handler: nil, type: .cancel))
+        }
+        
         let highlightBackgroundImage = UIImage.imageWithColor(Preferences.ButtonHighlightBackgroundColor)
         let nomalBackgroundImage = UIImage.imageWithColor(Preferences.ButtonNormalBackgroundColor)
-        var y: CGFloat = 0.0
+        var y: CGFloat = 0.0 // used to calculate container's height
         let x = bounds.minX
         let width = bounds.width
         var height = Preferences.ButtonHeight
@@ -152,7 +132,15 @@ extension WXActionSheet {
             button.setBackgroundImage(nomalBackgroundImage, for: .normal)
             button.setBackgroundImage(highlightBackgroundImage, for: .highlighted)
             button.setTitle(item.title, for: .normal)
-            button.setTitleColor(item.titleColor, for: .normal)
+            switch item.type  {
+            case .default:
+                button.setTitleColor(item.titleColor, for: .normal)
+            case .destructive:
+                button.setTitleColor(Preferences.DestructiveButtonTitleColor, for: .normal)
+            case .cancel:
+                button.setTitleColor(item.titleColor, for: .normal)
+            }
+            button.titleLabel?.font = UIFont.systemFont(ofSize: item.fontSize)
             if index == items.count - 1 {
                 let separator = UIView(frame: CGRect(x: 0, y: y , width: width, height: 5.0))
                 separator.backgroundColor = Preferences.SeparatorColor
@@ -187,8 +175,11 @@ extension WXActionSheet {
     
     @objc private func handleButtonTapped(_ sender: UIButton) {
         let index = sender.tag
-        delegate?.actionSheet?(self, clickedButtonAtIndex: index)
+        
         hide()
+        
+        let item = items[index]
+        item.handler?(self)
     }
 }
 
