@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,19 +33,19 @@
 		263AB76D8DC97F0F9BFB79237A15234C /* WXActionSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXActionSheet-umbrella.h"; sourceTree = "<group>"; };
 		27E45B6080119A9D8F2722CC41727556 /* Pods-WXActionSheetDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXActionSheetDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		281542D6A0D50FF20823DE4A4D7F381C /* WXActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXActionSheet.swift; path = Source/WXActionSheet/WXActionSheet.swift; sourceTree = "<group>"; };
-		2F9938228D5B444EB153A5591186CB9F /* WXActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WXActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2F9938228D5B444EB153A5591186CB9F /* WXActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WXActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		31C4F0CC40FD0CF628A4E6550B6F6F1F /* Pods-WXActionSheetDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WXActionSheetDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7DD8532C94D9BDB8FEDEA406C169EC6F /* WXActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WXActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD8532C94D9BDB8FEDEA406C169EC6F /* WXActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WXActionSheet.framework; path = WXActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BE81690B270185DF69E1C70E4E1767 /* WXActionSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXActionSheet-prefix.pch"; sourceTree = "<group>"; };
 		907AEDD70193429D383B52EEE5A26481 /* Pods-WXActionSheetDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WXActionSheetDemo-umbrella.h"; sourceTree = "<group>"; };
 		9094082AFFED6A0FDDC99B189D83FDEE /* Pods-WXActionSheetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXActionSheetDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9E9E0314197ED2D5878BCA44CA4F6E90 /* Pods-WXActionSheetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXActionSheetDemo.release.xcconfig"; sourceTree = "<group>"; };
-		A44B9A41DEB42580927B3B551B65E19E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A44B9A41DEB42580927B3B551B65E19E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		A6781B10D985F740CAA3AAF2AB3AFFCE /* Pods-WXActionSheetDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXActionSheetDemo-Info.plist"; sourceTree = "<group>"; };
-		AF3559CEDAFE299FE4B0191113527DE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF3559CEDAFE299FE4B0191113527DE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B643E3ACD5E70C9351072BE4D47EE89F /* WXActionSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXActionSheet.modulemap; sourceTree = "<group>"; };
-		B80FC2E077CAC6A3E673C6D7889EEDB1 /* Pods_WXActionSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXActionSheetDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80FC2E077CAC6A3E673C6D7889EEDB1 /* Pods_WXActionSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WXActionSheetDemo.framework; path = "Pods-WXActionSheetDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBFFE18C2BFFC6E4D8CC32936305F8 /* WXActionSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXActionSheet-dummy.m"; sourceTree = "<group>"; };
 		C54FE185A81712EDB5DAC698678483F8 /* Pods-WXActionSheetDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WXActionSheetDemo-dummy.m"; sourceTree = "<group>"; };
 		C6623F1D1CA9E20E50CD14A0DBCECFCC /* Pods-WXActionSheetDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WXActionSheetDemo-frameworks.sh"; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -317,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B2025FBB623F9B75A3B1B94C38CBBC3 /* WXActionSheet.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -331,7 +332,11 @@
 				INFOPLIST_FILE = "Target Support Files/WXActionSheet/WXActionSheet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/WXActionSheet/WXActionSheet.modulemap";
 				PRODUCT_MODULE_NAME = WXActionSheet;
 				PRODUCT_NAME = WXActionSheet;
@@ -350,6 +355,7 @@
 			baseConfigurationReference = 9E9E0314197ED2D5878BCA44CA4F6E90 /* Pods-WXActionSheetDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -363,7 +369,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo.modulemap";
 				OTHER_LDFLAGS = "";
@@ -448,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B2025FBB623F9B75A3B1B94C38CBBC3 /* WXActionSheet.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -462,7 +473,11 @@
 				INFOPLIST_FILE = "Target Support Files/WXActionSheet/WXActionSheet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/WXActionSheet/WXActionSheet.modulemap";
 				PRODUCT_MODULE_NAME = WXActionSheet;
 				PRODUCT_NAME = WXActionSheet;
@@ -530,7 +545,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -541,6 +557,7 @@
 			baseConfigurationReference = 9094082AFFED6A0FDDC99B189D83FDEE /* Pods-WXActionSheetDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -554,7 +571,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo.modulemap";
 				OTHER_LDFLAGS = "";

@@ -14,7 +14,8 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-           
+        
+        WXActionSheet.Preferences.ButtonTitleColor = .red
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -27,12 +28,9 @@ class ViewController: UITableViewController {
     
     private func normal() {
         let actionSheet = WXActionSheet(cancelButtonTitle: "取消")
-        actionSheet.append(WXActionSheetItem(title: "删除", handler: { _ in
+        actionSheet.add(WXActionSheetItem(title: "删除", handler: { _ in
             
         }, type: .destructive))
-//        actionSheet.append(WXActionSheetItem(title: "取消", handler: { _ in
-//            
-//        }, type: .cancel))
         actionSheet.show()
     }
 
