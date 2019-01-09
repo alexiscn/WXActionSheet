@@ -8,21 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7C6ED83945263577B18D0146 /* Pods_WXActionSheetDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFDFEB460B17517A32E9F39 /* Pods_WXActionSheetDemo.framework */; };
-		A37448D021D75BBA0091E236 /* WKWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37448CF21D75BBA0091E236 /* WKWebViewViewController.swift */; };
-		A37448D221D75BD60091E236 /* InputAccessViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37448D121D75BD60091E236 /* InputAccessViewViewController.swift */; };
 		A39CB03721D38EF30009F313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CB03621D38EF30009F313 /* AppDelegate.swift */; };
 		A39CB03921D38EF30009F313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CB03821D38EF30009F313 /* ViewController.swift */; };
 		A39CB03C21D38EF30009F313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39CB03A21D38EF30009F313 /* Main.storyboard */; };
 		A39CB03E21D38EF50009F313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39CB03D21D38EF50009F313 /* Assets.xcassets */; };
 		A39CB04121D38EF50009F313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39CB03F21D38EF50009F313 /* LaunchScreen.storyboard */; };
+		A3EA3C9021E5C98F00CDC4E2 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA3C8F21E5C98F00CDC4E2 /* PreviewViewController.swift */; };
+		A3EA3C9221E5C9E600CDC4E2 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = A3EA3C9121E5C9E600CDC4E2 /* swift.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D30A8779571A16564FB173B /* Pods-WXActionSheetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXActionSheetDemo.release.xcconfig"; path = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6BFDFEB460B17517A32E9F39 /* Pods_WXActionSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXActionSheetDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C3644FF8DC2444E9D2C8BB /* Pods-WXActionSheetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXActionSheetDemo.debug.xcconfig"; path = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		A37448CF21D75BBA0091E236 /* WKWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewViewController.swift; sourceTree = "<group>"; };
-		A37448D121D75BD60091E236 /* InputAccessViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAccessViewViewController.swift; sourceTree = "<group>"; };
 		A39CB03321D38EF30009F313 /* WXActionSheetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXActionSheetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39CB03621D38EF30009F313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39CB03821D38EF30009F313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +28,8 @@
 		A39CB03D21D38EF50009F313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39CB04021D38EF50009F313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39CB04221D38EF50009F313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3EA3C8F21E5C98F00CDC4E2 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		A3EA3C9121E5C9E600CDC4E2 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,15 +50,6 @@
 				6BFDFEB460B17517A32E9F39 /* Pods_WXActionSheetDemo.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A37448CE21D75B920091E236 /* Samples */ = {
-			isa = PBXGroup;
-			children = (
-				A37448CF21D75BBA0091E236 /* WKWebViewViewController.swift */,
-				A37448D121D75BD60091E236 /* InputAccessViewViewController.swift */,
-			);
-			path = Samples;
 			sourceTree = "<group>";
 		};
 		A39CB02A21D38EF30009F313 = {
@@ -82,12 +73,13 @@
 		A39CB03521D38EF30009F313 /* WXActionSheetDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A37448CE21D75B920091E236 /* Samples */,
 				A39CB03621D38EF30009F313 /* AppDelegate.swift */,
 				A39CB03821D38EF30009F313 /* ViewController.swift */,
+				A3EA3C8F21E5C98F00CDC4E2 /* PreviewViewController.swift */,
 				A39CB03A21D38EF30009F313 /* Main.storyboard */,
 				A39CB03D21D38EF50009F313 /* Assets.xcassets */,
 				A39CB03F21D38EF50009F313 /* LaunchScreen.storyboard */,
+				A3EA3C9121E5C9E600CDC4E2 /* swift.png */,
 				A39CB04221D38EF50009F313 /* Info.plist */,
 			);
 			path = WXActionSheetDemo;
@@ -163,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EA3C9221E5C9E600CDC4E2 /* swift.png in Resources */,
 				A39CB04121D38EF50009F313 /* LaunchScreen.storyboard in Resources */,
 				A39CB03E21D38EF50009F313 /* Assets.xcassets in Resources */,
 				A39CB03C21D38EF30009F313 /* Main.storyboard in Resources */,
@@ -241,10 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37448D021D75BBA0091E236 /* WKWebViewViewController.swift in Sources */,
 				A39CB03921D38EF30009F313 /* ViewController.swift in Sources */,
 				A39CB03721D38EF30009F313 /* AppDelegate.swift in Sources */,
-				A37448D221D75BD60091E236 /* InputAccessViewViewController.swift in Sources */,
+				A3EA3C9021E5C98F00CDC4E2 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX863G777H;
 				INFOPLIST_FILE = WXActionSheetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,6 +406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX863G777H;
 				INFOPLIST_FILE = WXActionSheetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
