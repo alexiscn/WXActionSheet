@@ -191,6 +191,7 @@ extension WXActionSheet {
             let view = UIView()
             
             let button = UIButton()
+            button.frame = CGRect(x: 0, y: 0, width: bounds.width, height: 62)
             button.tag = index
             button.addTarget(self, action: #selector(handleButtonTapped(_:)), for: .touchUpInside)
             button.setBackgroundImage(backgroundImage, for: .normal)
