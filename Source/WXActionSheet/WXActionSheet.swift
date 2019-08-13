@@ -87,6 +87,7 @@ extension WXActionSheet {
     private func commonInit() {
         
         backgroundView.frame = bounds
+        backgroundView.alpha = 0.0
         backgroundView.backgroundColor = UIColor(white: 0, alpha: 0.5)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
         tapGesture.delegate = self
