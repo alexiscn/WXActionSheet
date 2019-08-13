@@ -35,6 +35,8 @@ class ViewController: UITableViewController {
             showInActionSheet()
         case 6:
             customActionSheet()
+        case 7:
+            showActionSheetWithItemDesc()
         default:
             break
         }
@@ -138,6 +140,17 @@ class ViewController: UITableViewController {
         WXActionSheet.Preferences.DestructiveButtonTitleColor = UIColor.black
         
         showNormal()
+    }
+    
+    private func showActionSheetWithItemDesc() {
+        let actionSheet = WXActionSheet(cancelButtonTitle: "取消")
+        actionSheet.add(WXActionSheetItem(title: "拍摄", desc: "照片或视频", handler: { _ in
+            
+        }))
+        actionSheet.add(WXActionSheetItem(title: "从手机相册选择", handler: { _ in
+            
+        }))
+        actionSheet.show()
     }
 }
 
