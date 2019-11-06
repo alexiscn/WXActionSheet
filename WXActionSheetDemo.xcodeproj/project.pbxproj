@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -129,6 +129,7 @@
 				TargetAttributes = {
 					A39CB03221D38EF30009F313 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -211,16 +212,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WXActionSheet/WXActionSheet.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WXActionSheet.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -393,7 +389,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.shuifeng.WXActionSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -413,7 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.shuifeng.WXActionSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

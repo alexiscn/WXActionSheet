@@ -7,208 +7,208 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40E43F4D53C9B466D852AE43AD7FC05E /* WXActionSheetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FDA00580793E32375CCA95181A355E /* WXActionSheetItem.swift */; };
-		69F2B3B0009D901612016A4471441791 /* WXActionSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CBFFE18C2BFFC6E4D8CC32936305F8 /* WXActionSheet-dummy.m */; };
-		8F23D46AE5BD7C39DEBDF6DE21D278BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		9F664D523649371D1C7719015FF6F034 /* WXActionSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 263AB76D8DC97F0F9BFB79237A15234C /* WXActionSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D394A1572356843B39C010A1E7424A1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		DCEBEEBF4A14A27017AB94C3E8D20489 /* Pods-WXActionSheetDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 907AEDD70193429D383B52EEE5A26481 /* Pods-WXActionSheetDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E59909768569EDBC3A39B531F3344A94 /* WXActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281542D6A0D50FF20823DE4A4D7F381C /* WXActionSheet.swift */; };
-		F04B50DCD6E125F78F77E1DB53668585 /* Pods-WXActionSheetDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C54FE185A81712EDB5DAC698678483F8 /* Pods-WXActionSheetDemo-dummy.m */; };
+		00BC433EE8E1C543BC053CD00777DBFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1790E60AA6E74B9BD82A5386F7F864D0 /* Pods-WXActionSheetDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ADF06622BA6649446DE63831E100723 /* Pods-WXActionSheetDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E4E270FB29F07F59824560FF25E7295 /* Pods-WXActionSheetDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B788D2176B962E8902BE2AEB331D33 /* Pods-WXActionSheetDemo-dummy.m */; };
+		36A002AD87F017809D6E51082B5FED96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		63FC298E7C42916A6D539C8C11072775 /* WXActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45702B52964277B8CFC07BE5BA1F266 /* WXActionSheet.swift */; };
+		C411CB33F4302F0F7F21031E0EC2FB08 /* WXActionSheetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25DC4B130C00FF91266519AAFE12E78 /* WXActionSheetItem.swift */; };
+		D1F9F5BAAC8E42AC671163E223C651BA /* WXActionSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDADCF718C8568CA697E145ADA468C18 /* WXActionSheet-dummy.m */; };
+		F025DE49DC964FE8C4056EAE363C3F9F /* WXActionSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F92855C7AE6F53F7F00F83398E5CD2 /* WXActionSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C79EA9B537467663F11F6A36CB942788 /* PBXContainerItemProxy */ = {
+		79E63030613D1166B82A570B3DA6B8B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A36B8A84AC706382399260337513AAD2;
+			remoteGlobalIDString = BEBCB07D45ED3CC5EBA24F6B220241AC;
 			remoteInfo = WXActionSheet;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B2025FBB623F9B75A3B1B94C38CBBC3 /* WXActionSheet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXActionSheet.xcconfig; sourceTree = "<group>"; };
-		24FDA00580793E32375CCA95181A355E /* WXActionSheetItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXActionSheetItem.swift; path = Source/WXActionSheet/WXActionSheetItem.swift; sourceTree = "<group>"; };
-		263AB76D8DC97F0F9BFB79237A15234C /* WXActionSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXActionSheet-umbrella.h"; sourceTree = "<group>"; };
-		27E45B6080119A9D8F2722CC41727556 /* Pods-WXActionSheetDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXActionSheetDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		281542D6A0D50FF20823DE4A4D7F381C /* WXActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXActionSheet.swift; path = Source/WXActionSheet/WXActionSheet.swift; sourceTree = "<group>"; };
-		2F9938228D5B444EB153A5591186CB9F /* WXActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WXActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		31C4F0CC40FD0CF628A4E6550B6F6F1F /* Pods-WXActionSheetDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WXActionSheetDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7DD8532C94D9BDB8FEDEA406C169EC6F /* WXActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WXActionSheet.framework; path = WXActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80BE81690B270185DF69E1C70E4E1767 /* WXActionSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXActionSheet-prefix.pch"; sourceTree = "<group>"; };
-		907AEDD70193429D383B52EEE5A26481 /* Pods-WXActionSheetDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WXActionSheetDemo-umbrella.h"; sourceTree = "<group>"; };
-		9094082AFFED6A0FDDC99B189D83FDEE /* Pods-WXActionSheetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXActionSheetDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		9E9E0314197ED2D5878BCA44CA4F6E90 /* Pods-WXActionSheetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXActionSheetDemo.release.xcconfig"; sourceTree = "<group>"; };
-		A44B9A41DEB42580927B3B551B65E19E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		A6781B10D985F740CAA3AAF2AB3AFFCE /* Pods-WXActionSheetDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXActionSheetDemo-Info.plist"; sourceTree = "<group>"; };
-		AF3559CEDAFE299FE4B0191113527DE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B643E3ACD5E70C9351072BE4D47EE89F /* WXActionSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXActionSheet.modulemap; sourceTree = "<group>"; };
-		B80FC2E077CAC6A3E673C6D7889EEDB1 /* Pods_WXActionSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WXActionSheetDemo.framework; path = "Pods-WXActionSheetDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3CBFFE18C2BFFC6E4D8CC32936305F8 /* WXActionSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXActionSheet-dummy.m"; sourceTree = "<group>"; };
-		C54FE185A81712EDB5DAC698678483F8 /* Pods-WXActionSheetDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WXActionSheetDemo-dummy.m"; sourceTree = "<group>"; };
-		C6623F1D1CA9E20E50CD14A0DBCECFCC /* Pods-WXActionSheetDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WXActionSheetDemo-frameworks.sh"; sourceTree = "<group>"; };
-		CE71A8FD7E6C81BCBBD3B9DAD53A05A4 /* Pods-WXActionSheetDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WXActionSheetDemo.modulemap"; sourceTree = "<group>"; };
-		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EA03D13581CF3E81C6A20C77B4810FB1 /* WXActionSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXActionSheet-Info.plist"; sourceTree = "<group>"; };
+		0C4204C3B5AEF4E66BD841F6B54E4971 /* WXActionSheet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXActionSheet.xcconfig; sourceTree = "<group>"; };
+		1F0F6288CB01F7AB2B6A526FF2495DE6 /* Pods_WXActionSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WXActionSheetDemo.framework; path = "Pods-WXActionSheetDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		383B6E1DD37F45D4E48DEA0975DB042E /* WXActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WXActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3931A01BB1029E1FE48164712273D948 /* WXActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WXActionSheet.framework; path = WXActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B6D5A39A9005C17A9F4A38363CFAD2 /* Pods-WXActionSheetDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WXActionSheetDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		472BADB4FDBD575F409E5DDFDA00D452 /* WXActionSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXActionSheet-prefix.pch"; sourceTree = "<group>"; };
+		64B90DFDEF50D543CDCF77373C1A49FB /* Pods-WXActionSheetDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WXActionSheetDemo.modulemap"; sourceTree = "<group>"; };
+		6A2C2A7F60BACEE91FF8E21DACE6DB41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7799A2F4653A9F7E4DCCBFCEDC42C378 /* Pods-WXActionSheetDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WXActionSheetDemo-frameworks.sh"; sourceTree = "<group>"; };
+		7ADF06622BA6649446DE63831E100723 /* Pods-WXActionSheetDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WXActionSheetDemo-umbrella.h"; sourceTree = "<group>"; };
+		96FD106E05F9246B0BBDE2C13E34C427 /* Pods-WXActionSheetDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXActionSheetDemo-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0F92855C7AE6F53F7F00F83398E5CD2 /* WXActionSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXActionSheet-umbrella.h"; sourceTree = "<group>"; };
+		A97CE7C272D288834B3AE941C3C6FB4D /* Pods-WXActionSheetDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXActionSheetDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB2F5997A7E6695F36573AB3975FFADB /* Pods-WXActionSheetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXActionSheetDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B0B788D2176B962E8902BE2AEB331D33 /* Pods-WXActionSheetDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WXActionSheetDemo-dummy.m"; sourceTree = "<group>"; };
+		B25DC4B130C00FF91266519AAFE12E78 /* WXActionSheetItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXActionSheetItem.swift; path = Source/WXActionSheet/WXActionSheetItem.swift; sourceTree = "<group>"; };
+		B8E7D89EBC54960A82C1703CAE50E635 /* Pods-WXActionSheetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXActionSheetDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C29EBB110DA33572BDA890726898F65F /* WXActionSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXActionSheet.modulemap; sourceTree = "<group>"; };
+		CB7C77B6B4002B5A62DA8BA47C7E1214 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F2DE6800D67127112CD70A586C71802C /* WXActionSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXActionSheet-Info.plist"; sourceTree = "<group>"; };
+		F45702B52964277B8CFC07BE5BA1F266 /* WXActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXActionSheet.swift; path = Source/WXActionSheet/WXActionSheet.swift; sourceTree = "<group>"; };
+		FDADCF718C8568CA697E145ADA468C18 /* WXActionSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXActionSheet-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		71256C3534F0972016D5DBE4C1391002 /* Frameworks */ = {
+		4FC2D6FBBEFC4557AEF50FF3BCD68A3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D394A1572356843B39C010A1E7424A1C /* Foundation.framework in Frameworks */,
+				36A002AD87F017809D6E51082B5FED96 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7788657494FC6B3CA0DBD55883243A7 /* Frameworks */ = {
+		DFE29967F73D5502B8127D01BC35E7A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F23D46AE5BD7C39DEBDF6DE21D278BB /* Foundation.framework in Frameworks */,
+				00BC433EE8E1C543BC053CD00777DBFA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1ECE04345EEAEA03755954980935DC60 /* Pod */ = {
+		047632964EC5303AC25B557C2F1962FA /* Pods-WXActionSheetDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A44B9A41DEB42580927B3B551B65E19E /* LICENSE */,
-				AF3559CEDAFE299FE4B0191113527DE5 /* README.md */,
-				2F9938228D5B444EB153A5591186CB9F /* WXActionSheet.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		44D5347904CF754D6785B84253F2574A /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5BD24CCF3D2363B2F3935871ED949F29 /* WXActionSheet */ = {
-			isa = PBXGroup;
-			children = (
-				281542D6A0D50FF20823DE4A4D7F381C /* WXActionSheet.swift */,
-				24FDA00580793E32375CCA95181A355E /* WXActionSheetItem.swift */,
-				1ECE04345EEAEA03755954980935DC60 /* Pod */,
-				AD1FC065B2CDA537E502B12750813128 /* Support Files */,
-			);
-			name = WXActionSheet;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
-				B712477D974EA752DF5C24B200345B1A /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9D02A432823ACEC1195C458A1908765A /* Products */,
-				7F4484DB040E41E35DC137E7088DBB68 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		7F4484DB040E41E35DC137E7088DBB68 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B8928D4ADECC82915D3F5C6ACC28D945 /* Pods-WXActionSheetDemo */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9D02A432823ACEC1195C458A1908765A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B80FC2E077CAC6A3E673C6D7889EEDB1 /* Pods_WXActionSheetDemo.framework */,
-				7DD8532C94D9BDB8FEDEA406C169EC6F /* WXActionSheet.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AD1FC065B2CDA537E502B12750813128 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B643E3ACD5E70C9351072BE4D47EE89F /* WXActionSheet.modulemap */,
-				0B2025FBB623F9B75A3B1B94C38CBBC3 /* WXActionSheet.xcconfig */,
-				C3CBFFE18C2BFFC6E4D8CC32936305F8 /* WXActionSheet-dummy.m */,
-				EA03D13581CF3E81C6A20C77B4810FB1 /* WXActionSheet-Info.plist */,
-				80BE81690B270185DF69E1C70E4E1767 /* WXActionSheet-prefix.pch */,
-				263AB76D8DC97F0F9BFB79237A15234C /* WXActionSheet-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Pods/Target Support Files/WXActionSheet";
-			sourceTree = "<group>";
-		};
-		B712477D974EA752DF5C24B200345B1A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5BD24CCF3D2363B2F3935871ED949F29 /* WXActionSheet */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B8928D4ADECC82915D3F5C6ACC28D945 /* Pods-WXActionSheetDemo */ = {
-			isa = PBXGroup;
-			children = (
-				CE71A8FD7E6C81BCBBD3B9DAD53A05A4 /* Pods-WXActionSheetDemo.modulemap */,
-				31C4F0CC40FD0CF628A4E6550B6F6F1F /* Pods-WXActionSheetDemo-acknowledgements.markdown */,
-				27E45B6080119A9D8F2722CC41727556 /* Pods-WXActionSheetDemo-acknowledgements.plist */,
-				C54FE185A81712EDB5DAC698678483F8 /* Pods-WXActionSheetDemo-dummy.m */,
-				C6623F1D1CA9E20E50CD14A0DBCECFCC /* Pods-WXActionSheetDemo-frameworks.sh */,
-				A6781B10D985F740CAA3AAF2AB3AFFCE /* Pods-WXActionSheetDemo-Info.plist */,
-				907AEDD70193429D383B52EEE5A26481 /* Pods-WXActionSheetDemo-umbrella.h */,
-				9094082AFFED6A0FDDC99B189D83FDEE /* Pods-WXActionSheetDemo.debug.xcconfig */,
-				9E9E0314197ED2D5878BCA44CA4F6E90 /* Pods-WXActionSheetDemo.release.xcconfig */,
+				64B90DFDEF50D543CDCF77373C1A49FB /* Pods-WXActionSheetDemo.modulemap */,
+				42B6D5A39A9005C17A9F4A38363CFAD2 /* Pods-WXActionSheetDemo-acknowledgements.markdown */,
+				A97CE7C272D288834B3AE941C3C6FB4D /* Pods-WXActionSheetDemo-acknowledgements.plist */,
+				B0B788D2176B962E8902BE2AEB331D33 /* Pods-WXActionSheetDemo-dummy.m */,
+				7799A2F4653A9F7E4DCCBFCEDC42C378 /* Pods-WXActionSheetDemo-frameworks.sh */,
+				96FD106E05F9246B0BBDE2C13E34C427 /* Pods-WXActionSheetDemo-Info.plist */,
+				7ADF06622BA6649446DE63831E100723 /* Pods-WXActionSheetDemo-umbrella.h */,
+				AB2F5997A7E6695F36573AB3975FFADB /* Pods-WXActionSheetDemo.debug.xcconfig */,
+				B8E7D89EBC54960A82C1703CAE50E635 /* Pods-WXActionSheetDemo.release.xcconfig */,
 			);
 			name = "Pods-WXActionSheetDemo";
 			path = "Target Support Files/Pods-WXActionSheetDemo";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		0BA998EE9DF02D98AFC9E14E8E3FC1EC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				44D5347904CF754D6785B84253F2574A /* iOS */,
+				047632964EC5303AC25B557C2F1962FA /* Pods-WXActionSheetDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8A0719826AA681EFF1454DBB6EC26844 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F35CB55DFB6B74B28EC566ECCA36C133 /* WXActionSheet */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8A0719826AA681EFF1454DBB6EC26844 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DEAF0B6AF18944BF18208A743F82A24B /* Products */,
+				0BA998EE9DF02D98AFC9E14E8E3FC1EC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEAF0B6AF18944BF18208A743F82A24B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F0F6288CB01F7AB2B6A526FF2495DE6 /* Pods_WXActionSheetDemo.framework */,
+				3931A01BB1029E1FE48164712273D948 /* WXActionSheet.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3CA44299412685123E467246DBC7A14 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6A2C2A7F60BACEE91FF8E21DACE6DB41 /* LICENSE */,
+				CB7C77B6B4002B5A62DA8BA47C7E1214 /* README.md */,
+				383B6E1DD37F45D4E48DEA0975DB042E /* WXActionSheet.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F35CB55DFB6B74B28EC566ECCA36C133 /* WXActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				F45702B52964277B8CFC07BE5BA1F266 /* WXActionSheet.swift */,
+				B25DC4B130C00FF91266519AAFE12E78 /* WXActionSheetItem.swift */,
+				E3CA44299412685123E467246DBC7A14 /* Pod */,
+				FB93E75B0948BD53EC720EAFAB0ADB42 /* Support Files */,
+			);
+			name = WXActionSheet;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FB93E75B0948BD53EC720EAFAB0ADB42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C29EBB110DA33572BDA890726898F65F /* WXActionSheet.modulemap */,
+				0C4204C3B5AEF4E66BD841F6B54E4971 /* WXActionSheet.xcconfig */,
+				FDADCF718C8568CA697E145ADA468C18 /* WXActionSheet-dummy.m */,
+				F2DE6800D67127112CD70A586C71802C /* WXActionSheet-Info.plist */,
+				472BADB4FDBD575F409E5DDFDA00D452 /* WXActionSheet-prefix.pch */,
+				A0F92855C7AE6F53F7F00F83398E5CD2 /* WXActionSheet-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/WXActionSheet";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1F5CC78711503F8164D2630A86231E05 /* Headers */ = {
+		426BF2B25D4FFCDAD45EA306E3BCEA66 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCEBEEBF4A14A27017AB94C3E8D20489 /* Pods-WXActionSheetDemo-umbrella.h in Headers */,
+				1790E60AA6E74B9BD82A5386F7F864D0 /* Pods-WXActionSheetDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC07ACBAEDCB8F17ED92BCF115B8B061 /* Headers */ = {
+		451E7B0A42532D79FB2241FDAD867DAF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F664D523649371D1C7719015FF6F034 /* WXActionSheet-umbrella.h in Headers */,
+				F025DE49DC964FE8C4056EAE363C3F9F /* WXActionSheet-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A36B8A84AC706382399260337513AAD2 /* WXActionSheet */ = {
+		BEBCB07D45ED3CC5EBA24F6B220241AC /* WXActionSheet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAC048F572BAB11EBEA3D5C49201D935 /* Build configuration list for PBXNativeTarget "WXActionSheet" */;
+			buildConfigurationList = F2D866D68A85048A3744541189F42C99 /* Build configuration list for PBXNativeTarget "WXActionSheet" */;
 			buildPhases = (
-				EC07ACBAEDCB8F17ED92BCF115B8B061 /* Headers */,
-				9142BC3442419735A588CFB6A80BAE5F /* Sources */,
-				B7788657494FC6B3CA0DBD55883243A7 /* Frameworks */,
-				87C7AF608968B8ED38779DDB811616D1 /* Resources */,
+				451E7B0A42532D79FB2241FDAD867DAF /* Headers */,
+				52122FDC3D9D9C2A415B544A4E4229FC /* Sources */,
+				4FC2D6FBBEFC4557AEF50FF3BCD68A3F /* Frameworks */,
+				6184088926DA45C438956B70C37D38B3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -216,64 +216,64 @@
 			);
 			name = WXActionSheet;
 			productName = WXActionSheet;
-			productReference = 7DD8532C94D9BDB8FEDEA406C169EC6F /* WXActionSheet.framework */;
+			productReference = 3931A01BB1029E1FE48164712273D948 /* WXActionSheet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E1437BBA2D4D0640FE4FCBE0A0B8E15D /* Pods-WXActionSheetDemo */ = {
+		ED521373754A5D716D19CA069BA5B550 /* Pods-WXActionSheetDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4171AF8F7DA3C5241DACF8C27638532E /* Build configuration list for PBXNativeTarget "Pods-WXActionSheetDemo" */;
+			buildConfigurationList = D0945CE291C8038866AC62D1B188E2BF /* Build configuration list for PBXNativeTarget "Pods-WXActionSheetDemo" */;
 			buildPhases = (
-				1F5CC78711503F8164D2630A86231E05 /* Headers */,
-				4CC875B3ED48C44BD1478FF3106A045A /* Sources */,
-				71256C3534F0972016D5DBE4C1391002 /* Frameworks */,
-				3659A8CF5377C011DC774F54AEBD293E /* Resources */,
+				426BF2B25D4FFCDAD45EA306E3BCEA66 /* Headers */,
+				14EE3D8590DCF52E10E16030087A2B53 /* Sources */,
+				DFE29967F73D5502B8127D01BC35E7A4 /* Frameworks */,
+				BCD1EB086D410A26D82B7152A0CAD3EA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6FD5570F9385A2BDB1833E071D69F9FF /* PBXTargetDependency */,
+				8C3A8B22622DCE7142A2BD888297E124 /* PBXTargetDependency */,
 			);
 			name = "Pods-WXActionSheetDemo";
 			productName = "Pods-WXActionSheetDemo";
-			productReference = B80FC2E077CAC6A3E673C6D7889EEDB1 /* Pods_WXActionSheetDemo.framework */;
+			productReference = 1F0F6288CB01F7AB2B6A526FF2495DE6 /* Pods_WXActionSheetDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9D02A432823ACEC1195C458A1908765A /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = DEAF0B6AF18944BF18208A743F82A24B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1437BBA2D4D0640FE4FCBE0A0B8E15D /* Pods-WXActionSheetDemo */,
-				A36B8A84AC706382399260337513AAD2 /* WXActionSheet */,
+				ED521373754A5D716D19CA069BA5B550 /* Pods-WXActionSheetDemo */,
+				BEBCB07D45ED3CC5EBA24F6B220241AC /* WXActionSheet */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3659A8CF5377C011DC774F54AEBD293E /* Resources */ = {
+		6184088926DA45C438956B70C37D38B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87C7AF608968B8ED38779DDB811616D1 /* Resources */ = {
+		BCD1EB086D410A26D82B7152A0CAD3EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,41 +283,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4CC875B3ED48C44BD1478FF3106A045A /* Sources */ = {
+		14EE3D8590DCF52E10E16030087A2B53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04B50DCD6E125F78F77E1DB53668585 /* Pods-WXActionSheetDemo-dummy.m in Sources */,
+				1E4E270FB29F07F59824560FF25E7295 /* Pods-WXActionSheetDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9142BC3442419735A588CFB6A80BAE5F /* Sources */ = {
+		52122FDC3D9D9C2A415B544A4E4229FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69F2B3B0009D901612016A4471441791 /* WXActionSheet-dummy.m in Sources */,
-				E59909768569EDBC3A39B531F3344A94 /* WXActionSheet.swift in Sources */,
-				40E43F4D53C9B466D852AE43AD7FC05E /* WXActionSheetItem.swift in Sources */,
+				D1F9F5BAAC8E42AC671163E223C651BA /* WXActionSheet-dummy.m in Sources */,
+				63FC298E7C42916A6D539C8C11072775 /* WXActionSheet.swift in Sources */,
+				C411CB33F4302F0F7F21031E0EC2FB08 /* WXActionSheetItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6FD5570F9385A2BDB1833E071D69F9FF /* PBXTargetDependency */ = {
+		8C3A8B22622DCE7142A2BD888297E124 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WXActionSheet;
-			target = A36B8A84AC706382399260337513AAD2 /* WXActionSheet */;
-			targetProxy = C79EA9B537467663F11F6A36CB942788 /* PBXContainerItemProxy */;
+			target = BEBCB07D45ED3CC5EBA24F6B220241AC /* WXActionSheet */;
+			targetProxy = 79E63030613D1166B82A570B3DA6B8B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2678BA6AD8100DD4419BA958F6126031 /* Debug */ = {
+		1746F9822C5E8572B5A32FF294A68686 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B2025FBB623F9B75A3B1B94C38CBBC3 /* WXActionSheet.xcconfig */;
+			baseConfigurationReference = 0C4204C3B5AEF4E66BD841F6B54E4971 /* WXActionSheet.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -343,19 +342,115 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A1CEA15ED8D75851685352FE2EEBA167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4204C3B5AEF4E66BD841F6B54E4971 /* WXActionSheet.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WXActionSheet/WXActionSheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WXActionSheet/WXActionSheet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WXActionSheet/WXActionSheet.modulemap";
+				PRODUCT_MODULE_NAME = WXActionSheet;
+				PRODUCT_NAME = WXActionSheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		3F4FE966F452BF684F6B8F05216971FF /* Release */ = {
+		BC05CD8084FC8AED288378A7542D29B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E9E0314197ED2D5878BCA44CA4F6E90 /* Pods-WXActionSheetDemo.release.xcconfig */;
+			baseConfigurationReference = B8E7D89EBC54960A82C1703CAE50E635 /* Pods-WXActionSheetDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -390,7 +485,45 @@
 			};
 			name = Release;
 		};
-		53F99F6B1862E780A72A99B751670C43 /* Debug */ = {
+		DA997349D408BF1F89EA03064FAA5C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2F5997A7E6695F36573AB3975FFADB /* Pods-WXActionSheetDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -449,179 +582,42 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		5A1CACF4F72857D2EFBE6FF7618924C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B2025FBB623F9B75A3B1B94C38CBBC3 /* WXActionSheet.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WXActionSheet/WXActionSheet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WXActionSheet/WXActionSheet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WXActionSheet/WXActionSheet.modulemap";
-				PRODUCT_MODULE_NAME = WXActionSheet;
-				PRODUCT_NAME = WXActionSheet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		80207B3A22B9372718B5DE4B8557FA98 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		FC8ED1585454C9A334706F2E3DB01E3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9094082AFFED6A0FDDC99B189D83FDEE /* Pods-WXActionSheetDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WXActionSheetDemo/Pods-WXActionSheetDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53F99F6B1862E780A72A99B751670C43 /* Debug */,
-				80207B3A22B9372718B5DE4B8557FA98 /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4171AF8F7DA3C5241DACF8C27638532E /* Build configuration list for PBXNativeTarget "Pods-WXActionSheetDemo" */ = {
+		D0945CE291C8038866AC62D1B188E2BF /* Build configuration list for PBXNativeTarget "Pods-WXActionSheetDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC8ED1585454C9A334706F2E3DB01E3F /* Debug */,
-				3F4FE966F452BF684F6B8F05216971FF /* Release */,
+				DA997349D408BF1F89EA03064FAA5C0F /* Debug */,
+				BC05CD8084FC8AED288378A7542D29B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAC048F572BAB11EBEA3D5C49201D935 /* Build configuration list for PBXNativeTarget "WXActionSheet" */ = {
+		F2D866D68A85048A3744541189F42C99 /* Build configuration list for PBXNativeTarget "WXActionSheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2678BA6AD8100DD4419BA958F6126031 /* Debug */,
-				5A1CACF4F72857D2EFBE6FF7618924C0 /* Release */,
+				A1CEA15ED8D75851685352FE2EEBA167 /* Debug */,
+				1746F9822C5E8572B5A32FF294A68686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

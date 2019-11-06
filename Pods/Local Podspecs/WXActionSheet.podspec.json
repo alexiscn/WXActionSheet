@@ -1,13 +1,13 @@
 {
   "name": "WXActionSheet",
-  "version": "0.0.8",
+  "version": "0.3.0",
   "license": {
     "type": "MIT"
   },
   "requires_arc": true,
   "source": {
     "git": "https://github.com/alexiscn/WXActionSheet.git",
-    "tag": "0.0.8"
+    "tag": "0.3.0"
   },
   "summary": "WXActionSheet",
   "homepage": "https://github.com/alexiscn/WXActionSheet",
@@ -17,6 +17,7 @@
   "platforms": {
     "ios": "11.0"
   },
-  "swift_version": "4.2",
-  "source_files": "Source/**/*.{swift}"
+  "swift_versions": "5.0",
+  "source_files": "Source/**/*.{swift}",
+  "swift_version": "5.0"
 }
