@@ -35,9 +35,13 @@ public class WXActionSheet: UIView {
     public var roundTopCorners: Bool = true
     
     private let containerView = UIView()
+    
     private let backgroundView = UIView()
+    
     private var items: [WXActionSheetItem] = []
+    
     private let LineHeight: CGFloat = 1.0/UIScreen.main.scale
+    
     private var cancelButtonTitle: String?
     
     public init(cancelButtonTitle: String? = nil) {
@@ -242,17 +246,4 @@ extension WXActionSheet: UIGestureRecognizerDelegate {
         }
         return true
     }
-}
-
-fileprivate extension UIImage {
-    
-    class func imageWithColor(_ color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(size, false, 0)
-        color.setFill()
-        UIRectFill(CGRect(origin: .zero, size: size))
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image
-    }
-    
 }
