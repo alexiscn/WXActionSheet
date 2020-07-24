@@ -28,7 +28,7 @@ public class WXScrollActionSheet: UIView {
     
     public private(set) var subTitleLabel: UILabel!
     
-    private var containerView: WXScrollActionSheetContainerView!
+    private var containerView: UIView!
     
     private var bottomPaddingView: UIView!
     
@@ -55,12 +55,12 @@ public class WXScrollActionSheet: UIView {
     
     private func commonInit() {
 
-        //containerView = UIView()
+        containerView = UIView()
         
         titleLabel = UILabel()
         
-        
         bottomPaddingView = UIView()
+        
         containerView.addSubview(bottomPaddingView)
     }
     
@@ -87,5 +87,4 @@ extension WXScrollActionSheet: WXScrollActionSheetItemViewDelegate {
         delegate?.scrollActionSheet?(self, didSelectItem: item)
     }
 }
-    
 

@@ -8,9 +8,9 @@
 import UIKit
 
 @objc protocol WXActionSheetScrollViewDelegate {
+    
     @objc optional func customViewForItem(_ item: WXScrollActionSheetItem) -> UIView
 }
-
 
 class WXActionSheetScrollView: UIScrollView {
     

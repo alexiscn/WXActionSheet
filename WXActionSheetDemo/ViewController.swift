@@ -133,16 +133,11 @@ class ViewController: UITableViewController {
     }
     
     private func customActionSheet() {
-//        WXActionSheet.Preferences.ButtonHeight = 44.0
-//        WXActionSheet.Preferences.ButtonTitleColor = .white
-//        WXActionSheet.Preferences.ButtonNormalBackgroundColor = UIColor(white: 0.0, alpha: 0.3)
-//        WXActionSheet.Preferences.ButtonHighlightBackgroundColor = UIColor(white: 0.0, alpha: 0.5)
-//        WXActionSheet.Preferences.DestructiveButtonTitleColor = UIColor.black
-//
-//        showNormal()
-        
         let contentView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 300))
-        contentView.backgroundColor = .red
+        contentView.backgroundColor = .blue
+        contentView.layer.cornerRadius = 16
+        contentView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        contentView.clipsToBounds = true
         WXActionSheet.show(contentView)
     }
     

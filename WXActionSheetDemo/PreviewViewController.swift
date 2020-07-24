@@ -46,6 +46,7 @@ class PreviewViewController: UIViewController {
             
         }))
         actionSheet.show()
+        WXActionSheetStyle.lightAppearance.buttonHeight = 45.0
     }
         
     override var prefersStatusBarHidden: Bool {

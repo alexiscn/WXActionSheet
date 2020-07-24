@@ -19,6 +19,8 @@ import UIKit
     
     public var alpha: CGFloat = 1.0
     
+    public var userInfo: [String: Any] = [:]
+    
     public init(identifier: String, title: String, iconImage: UIImage?) {
         self.identifier = identifier
         self.title = title
