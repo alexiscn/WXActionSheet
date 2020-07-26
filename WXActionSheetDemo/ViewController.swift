@@ -37,6 +37,8 @@ class ViewController: UITableViewController {
             customActionSheet()
         case 7:
             showActionSheetWithItemDesc()
+        case 8:
+            showScrollActionSheet()
         default:
             break
         }
@@ -151,6 +153,18 @@ class ViewController: UITableViewController {
         }))
         actionSheet.show()
     }
+    
+    private func showScrollActionSheet() {
+        let actionSheet = WXScrollActionSheet()
+        actionSheet.delegate = self
+        actionSheet.show()
+    }
 }
 
-
+extension ViewController: WXScrollActionSheetDelegate {
+    
+    func scrollActionSheet(_ scrollActionSheet: WXScrollActionSheet, didSelectItem item: WXScrollActionSheetItem) {
+        
+    }
+    
+}
