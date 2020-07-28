@@ -22,13 +22,13 @@ public class WXActionSheetItem {
     
     public var titleEdgeInsets: UIEdgeInsets = .zero
     
-    public var titleColor: UIColor? = WXActionSheetStyle.light.appearance.buttonTitleColor
+    public var titleColor: UIColor?
     
     public var font: UIFont = UIFont.systemFont(ofSize: 17)
     
     public var desc: String?
     
-    public var descColor: UIColor = UIColor(white: 0, alpha: 0.4)
+    public var descColor: UIColor?
     
     public var iconImage: UIImage?
     

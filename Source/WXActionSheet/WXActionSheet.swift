@@ -10,7 +10,13 @@ import UIKit
 
 public class WXActionSheet: UIView {
     
-    public var style: WXActionSheetStyle = .light
+    public var style: WXActionSheetStyle = {
+        if #available(iOS 13, *) {
+            return .system
+        } else {
+            return .light
+        }
+    }()
     
     public var titleView: UIView?
     
@@ -77,13 +83,13 @@ extension WXActionSheet {
     private func commonInit() {
         backgroundView.frame = bounds
         backgroundView.alpha = 0.0
-        backgroundView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        backgroundView.backgroundColor = style.appearance.dimmingBackgroundColor
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
         tapGesture.delegate = self
         backgroundView.addGestureRecognizer(tapGesture)
         addSubview(backgroundView)
         
-        containerView.backgroundColor = .white
+        containerView.backgroundColor = style.appearance.containerBackgroundColor
         addSubview(containerView)
     }
     
@@ -139,7 +145,7 @@ extension WXActionSheet {
             if !isLastItem {
                 let line = UIView()
                 line.frame = CGRect(x: x, y: y, width: width, height: LineHeight)
-                line.backgroundColor = UIColor(white: 0, alpha: 0.1)
+                line.backgroundColor = style.appearance.separatorLineColor
                 containerView.addSubview(line)
                 y += LineHeight
             }
@@ -152,11 +158,12 @@ extension WXActionSheet {
             containerView.layer.masksToBounds = true
             containerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         }
-        
-        let effectView = UIVisualEffectView(effect: UIBlurEffect(style: .regular))
-        effectView.frame = containerView.bounds
-        containerView.addSubview(effectView)
-        containerView.sendSubviewToBack(effectView)
+        if style.appearance.enableBlurEffect {
+            let effectView = UIVisualEffectView(effect: style.appearance.effect)
+            effectView.frame = containerView.bounds
+            containerView.addSubview(effectView)
+            containerView.sendSubviewToBack(effectView)
+        }
     }
     
     fileprivate func actionItemView(item: WXActionSheetItem, at index: Int, isLastItem: Bool, backgroundImage: UIImage?, highlightBackgroundImage: UIImage?) -> UIView {
@@ -172,7 +179,12 @@ extension WXActionSheet {
             button.imageEdgeInsets = item.imageEdgeInsets
             button.titleEdgeInsets = isLastItem ? UIEdgeInsets(top: -safeInsets.bottom/2, left: 0, bottom: safeInsets.bottom/2, right: 0) : item.titleEdgeInsets
             button.titleLabel?.font = item.font
-            let titleColor = item.type == .destructive ? style.appearance.destructiveButtonTitleColor: item.titleColor
+            let titleColor: UIColor
+            if item.type == .destructive {
+                titleColor = style.appearance.destructiveButtonTitleColor
+            } else {
+                titleColor = item.titleColor ?? style.appearance.buttonTitleColor
+            }
             button.setTitleColor(titleColor, for: .normal)
             button.addTarget(self, action: #selector(handleButtonTapped(_:)), for: .touchUpInside)
             return button
@@ -195,7 +207,7 @@ extension WXActionSheet {
             let descLabel = UILabel()
             descLabel.textAlignment = .center
             descLabel.text = item.desc
-            descLabel.textColor = item.descColor
+            descLabel.textColor = item.descColor ?? style.appearance.titleColor
             descLabel.font = UIFont.systemFont(ofSize: 12)
             descLabel.frame = CGRect(x: 0, y: 36, width: bounds.width, height: 15)
             
