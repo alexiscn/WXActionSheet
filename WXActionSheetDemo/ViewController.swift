@@ -45,6 +45,9 @@ class ViewController: UITableViewController {
     }
     
     private func showNormal() {
+        
+        //WXActionSheetStyle.lightAppearance.destructiveButtonTitleColor = .blue
+        
         let actionSheet = WXActionSheet(cancelButtonTitle: "取消")
         actionSheet.add(WXActionSheetItem(title: "发送给朋友", handler: { _ in
             

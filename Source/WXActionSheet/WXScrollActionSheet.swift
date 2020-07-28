@@ -28,34 +28,47 @@ public class WXScrollActionSheet: UIView {
     
     public private(set) var subTitleLabel: UILabel!
     
+    private var backgroundView: UIView!
+    
     private var containerView: UIView!
     
     private var bottomPaddingView: UIView!
     
     private var cancelButton: UIButton!
     
+    public var title: String? = nil
+    
     /// A String value indicating the title for the cancel button.
     public var cancelTitle: String? = NSLocalizedString("Cancel", comment: "")
+    
+    public var topItems: [WXScrollActionSheetItem] = []
+    
+    public var bottomItems: [WXScrollActionSheetItem] = []
     
     /// A Boolean value indicating whether dismiss self when click item. The default value is `true`.
     public var dismissOnClickItem: Bool = true
     
-    /// The background view. normally it is transparent.
-    public private(set) var backgroundTappingView: UIView!
-    
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
+    public init(title: String = "", topItems: [WXScrollActionSheetItem] = [], bottomItems: [WXScrollActionSheetItem] = []) {
+        self.title = title
+        self.topItems = topItems
+        self.bottomItems = bottomItems
+        super.init(frame: UIScreen.main.bounds)
+        _commonInit()
     }
     
-    required public init?(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         super.init(coder: coder)
-        commonInit()
+        _commonInit()
     }
     
-    private func commonInit() {
+    private func _commonInit() {
 
+        backgroundView = UIView()
+        backgroundView.alpha = 0.0
+        addSubview(backgroundView)
+        
         containerView = UIView()
+        addSubview(containerView)
         
         titleLabel = UILabel()
         
@@ -64,16 +77,90 @@ public class WXScrollActionSheet: UIView {
         containerView.addSubview(bottomPaddingView)
     }
     
+    private func _buildUI() {
+//        var offsetY: CGFloat = 0.0
+//        titleLabel.font = UIFont.systemFont(ofSize: 10)
+//        titleLabel.frame = CGRect(x: 10, y: 16.0, width: bounds.width - 20, height: 14.0)
+//        titleLabel.textColor = UIColor(white: 0, alpha: 0.5)
+//        titleLabel.text = title
+//        titleLabel.textAlignment = .center
+//        containerView.addSubview(titleLabel)
+//
+//        let topScrollViewFrame = CGRect(x: 0, y: 54, width: bounds.width, height: 108)
+//        let topScrollView = WXActionSheetScrollView(items: topItems, frame: topScrollViewFrame)
+//        topScrollView.itemDelegate = delegate
+//        containerView.addSubview(topScrollView)
+//
+//        offsetY = 54.0 + 108.0
+//
+//        if bottomItems.count > 0 {
+//
+//            let separtorLine = UIView()
+//            separtorLine.frame = CGRect(x: 12.0, y: offsetY, width: bounds.width - 24.0, height: Constants.lineHeight)
+//            separtorLine.backgroundColor = UIColor(white: 0, alpha: 0.1)
+//            containerView.addSubview(separtorLine)
+//
+//            offsetY += 15
+//
+//            let bottomScrollViewFrame = CGRect(x: 0, y: offsetY, width: bounds.width, height: 108.0)
+//            let bottomScrollView = WXActionSheetScrollView(items: bottomItems, frame: bottomScrollViewFrame)
+//            bottomScrollView.itemDelegate = delegate
+//            containerView.addSubview(bottomScrollView)
+//
+//            offsetY += 108.0
+//        }
+//
+//        offsetY += 15.0
+//
+//        let cancelButton = UIButton(type: .custom)
+//        cancelButton.backgroundColor = .white
+//        cancelButton.setTitle(cancelButtonTitle, for: .normal)
+//        cancelButton.setTitleColor(UIColor(white: 0, alpha: 0.9), for: .normal)
+//        containerView.addSubview(cancelButton)
+//        cancelButton.frame = CGRect(x: 0, y: offsetY, width: bounds.width, height: 56.0 + Constants.bottomInset)
+//        cancelButton.addTarget(self, action: #selector(handleCancelButtonClicked), for: .touchUpInside)
+//
+//        offsetY += (56.0 + Constants.bottomInset)
+//        if Constants.iPhoneX {
+//            let bottomInset = Constants.bottomInset
+//            cancelButton.titleEdgeInsets = UIEdgeInsets(top: -bottomInset/2, left: 0, bottom: bottomInset/2, right: 0)
+//        }
+//
+//        containerView.frame = CGRect(x: 0, y: bounds.height, width: bounds.width, height: offsetY)
+//
+//        let blurView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+//        blurView.frame = containerView.bounds
+//        containerView.addSubview(blurView)
+//        containerView.sendSubviewToBack(blurView)
+    }
+    
     public func show() {
-        
+        let windows = UIApplication.shared.windows.filter { NSStringFromClass($0.classForCoder) != "UIRemoteKeyboardWindow" }
+        guard let win = windows.last else { return }
+        _buildUI()
+        UIView.animate(withDuration: 0.1, animations: {
+            win.addSubview(self)
+        }) { _ in
+            UIView.animate(withDuration: 0.3) {
+                self.backgroundView.alpha = 1.0
+                let y = self.bounds.height - self.containerView.frame.height
+                self.containerView.frame.origin = CGPoint(x: 0, y: y)
+            }
+        }
     }
     
     public func dismiss(animated: Bool = true) {
-        
+        UIView.animate(withDuration: 0.25, animations: {
+            self.backgroundView.alpha = 0.0
+            let y = UIScreen.main.bounds.height
+            self.containerView.frame.origin = CGPoint(x: 0, y: y)
+        }) { _ in
+            self.removeFromSuperview()
+        }
     }
     
     public func reloadData() {
-        
+        //_buildUI()
     }
 }
 
