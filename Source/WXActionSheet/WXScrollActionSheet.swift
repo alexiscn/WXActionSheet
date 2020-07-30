@@ -36,6 +36,8 @@ public class WXScrollActionSheet: UIView {
     
     private var cancelButton: UIButton!
     
+    public var titleView: UIView?
+    
     public var title: String? = nil
     
     /// A String value indicating the title for the cancel button.
@@ -53,15 +55,15 @@ public class WXScrollActionSheet: UIView {
         self.topItems = topItems
         self.bottomItems = bottomItems
         super.init(frame: UIScreen.main.bounds)
-        _commonInit()
+        commonInit()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        _commonInit()
+        commonInit()
     }
     
-    private func _commonInit() {
+    private func commonInit() {
 
         backgroundView = UIView()
         backgroundView.alpha = 0.0
@@ -77,7 +79,7 @@ public class WXScrollActionSheet: UIView {
         containerView.addSubview(bottomPaddingView)
     }
     
-    private func _buildUI() {
+    private func buildUI() {
 //        var offsetY: CGFloat = 0.0
 //        titleLabel.font = UIFont.systemFont(ofSize: 10)
 //        titleLabel.frame = CGRect(x: 10, y: 16.0, width: bounds.width - 20, height: 14.0)
@@ -137,7 +139,7 @@ public class WXScrollActionSheet: UIView {
     public func show() {
         let windows = UIApplication.shared.windows.filter { NSStringFromClass($0.classForCoder) != "UIRemoteKeyboardWindow" }
         guard let win = windows.last else { return }
-        _buildUI()
+        buildUI()
         UIView.animate(withDuration: 0.1, animations: {
             win.addSubview(self)
         }) { _ in
@@ -160,7 +162,7 @@ public class WXScrollActionSheet: UIView {
     }
     
     public func reloadData() {
-        //_buildUI()
+        
     }
 }
 

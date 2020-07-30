@@ -20,7 +20,7 @@ class WXActionSheetScrollView: UIScrollView {
         subviews.forEach { $0.removeFromSuperview() }
         
         for item in items {
-            let itemView = WXScrollActionSheetIconView(item: item)
+            let itemView = WXScrollActionSheetItemView(item: item)
             itemView.delegate = delegate
             addSubview(itemView)
         }

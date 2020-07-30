@@ -16,12 +16,10 @@
 		31DCD0B5F395643FD398EB38C2426DA3 /* WXActionSheet+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943D5D7DC4457E190BFF288265406B2 /* WXActionSheet+Popup.swift */; };
 		341A5B2030F7ED4FD4C4E6229397DC5B /* WXActionSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E056691FCB5FA2A6A73EF38ECD81EEAC /* WXActionSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		365B9310F56617D4908334A66477B3B0 /* WXActionSheetStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F046F3DF97A1FB6EE69959F1377C0C /* WXActionSheetStyle.swift */; };
-		851C78F00AD48AA355EE16FD6D7EC9E0 /* WXScrollActionSheetContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC01DDAF0DC3CF982C722847109DD /* WXScrollActionSheetContainerView.swift */; };
 		8E5E78388B4DA2A337B9E40BB4BC1D12 /* WXScrollActionSheetItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC197DB031A2D92D6BA3A2E709CD3A /* WXScrollActionSheetItemView.swift */; };
 		906295826720A04453D53335F80FFD92 /* WXActionSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB31E491F17CF5965C488EF89921CC62 /* WXActionSheet-dummy.m */; };
 		9334243722E8175C4B9F7CDDD2F3C46D /* UIImage+WXActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DF7C772E825CAF752425774554314 /* UIImage+WXActionSheet.swift */; };
 		B7A94350430C67029DB9B11727AC3761 /* WXActionSheetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57A8B7499214A9A33EFA6CC292A203 /* WXActionSheetItem.swift */; };
-		CF577E1C3E1AF7B1393BAB66BFA916EA /* WXScrollActionSheetIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CD31448EB1CA2B1DACB15D5CC25B37 /* WXScrollActionSheetIconView.swift */; };
 		D77612954E2B99B98EAAC887D3C36B33 /* WXActionSheetScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C0AECA5950EDDB39333333ADF4D87F /* WXActionSheetScrollView.swift */; };
 		EA79C25A20A17BCFDF11AF148FAE0624 /* WXScrollActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EE38FDE5558D339CEFB4DD66536159 /* WXScrollActionSheet.swift */; };
 /* End PBXBuildFile section */
@@ -37,23 +35,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0215D4E0F49AF721AEF188CD2E2F963F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0215D4E0F49AF721AEF188CD2E2F963F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		17F046F3DF97A1FB6EE69959F1377C0C /* WXActionSheetStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXActionSheetStyle.swift; path = Source/WXActionSheet/WXActionSheetStyle.swift; sourceTree = "<group>"; };
-		1AD21B6B252205C988FB308762982EDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		1F0F6288CB01F7AB2B6A526FF2495DE6 /* Pods_WXActionSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WXActionSheetDemo.framework; path = "Pods-WXActionSheetDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD21B6B252205C988FB308762982EDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1F0F6288CB01F7AB2B6A526FF2495DE6 /* Pods_WXActionSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXActionSheetDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CABE97D7EF81CEDF2A5F6400CB6C29A /* WXScrollActionSheetItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXScrollActionSheetItem.swift; path = Source/WXActionSheet/WXScrollActionSheetItem.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		33CD31448EB1CA2B1DACB15D5CC25B37 /* WXScrollActionSheetIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXScrollActionSheetIconView.swift; path = Source/WXActionSheet/WXScrollActionSheetIconView.swift; sourceTree = "<group>"; };
-		3931A01BB1029E1FE48164712273D948 /* WXActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WXActionSheet.framework; path = WXActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3931A01BB1029E1FE48164712273D948 /* WXActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WXActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B6D5A39A9005C17A9F4A38363CFAD2 /* Pods-WXActionSheetDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WXActionSheetDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5EEAC01DDAF0DC3CF982C722847109DD /* WXScrollActionSheetContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXScrollActionSheetContainerView.swift; path = Source/WXActionSheet/WXScrollActionSheetContainerView.swift; sourceTree = "<group>"; };
 		64B90DFDEF50D543CDCF77373C1A49FB /* Pods-WXActionSheetDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WXActionSheetDemo.modulemap"; sourceTree = "<group>"; };
 		752DE06AC85027EFA09B6DE820F57460 /* WXActionSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXActionSheet-prefix.pch"; sourceTree = "<group>"; };
 		7799A2F4653A9F7E4DCCBFCEDC42C378 /* Pods-WXActionSheetDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WXActionSheetDemo-frameworks.sh"; sourceTree = "<group>"; };
 		7ADF06622BA6649446DE63831E100723 /* Pods-WXActionSheetDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WXActionSheetDemo-umbrella.h"; sourceTree = "<group>"; };
 		8A57A8B7499214A9A33EFA6CC292A203 /* WXActionSheetItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXActionSheetItem.swift; path = Source/WXActionSheet/WXActionSheetItem.swift; sourceTree = "<group>"; };
 		96FD106E05F9246B0BBDE2C13E34C427 /* Pods-WXActionSheetDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXActionSheetDemo-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2C0AECA5950EDDB39333333ADF4D87F /* WXActionSheetScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXActionSheetScrollView.swift; path = Source/WXActionSheet/WXActionSheetScrollView.swift; sourceTree = "<group>"; };
 		A943D5D7DC4457E190BFF288265406B2 /* WXActionSheet+Popup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WXActionSheet+Popup.swift"; path = "Source/WXActionSheet/WXActionSheet+Popup.swift"; sourceTree = "<group>"; };
 		A97CE7C272D288834B3AE941C3C6FB4D /* Pods-WXActionSheetDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WXActionSheetDemo-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -69,7 +65,7 @@
 		DC66CB12C7C16CFC8A3B8A9CC722EECA /* WXActionSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXActionSheet-Info.plist"; sourceTree = "<group>"; };
 		E056691FCB5FA2A6A73EF38ECD81EEAC /* WXActionSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXActionSheet-umbrella.h"; sourceTree = "<group>"; };
 		E30DF7C772E825CAF752425774554314 /* UIImage+WXActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+WXActionSheet.swift"; path = "Source/WXActionSheet/UIImage+WXActionSheet.swift"; sourceTree = "<group>"; };
-		F9844DC1ED731E41250BC3239B177790 /* WXActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WXActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F9844DC1ED731E41250BC3239B177790 /* WXActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WXActionSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FDDC197DB031A2D92D6BA3A2E709CD3A /* WXScrollActionSheetItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXScrollActionSheetItemView.swift; path = Source/WXActionSheet/WXScrollActionSheetItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,8 +149,6 @@
 				A2C0AECA5950EDDB39333333ADF4D87F /* WXActionSheetScrollView.swift */,
 				17F046F3DF97A1FB6EE69959F1377C0C /* WXActionSheetStyle.swift */,
 				B5EE38FDE5558D339CEFB4DD66536159 /* WXScrollActionSheet.swift */,
-				5EEAC01DDAF0DC3CF982C722847109DD /* WXScrollActionSheetContainerView.swift */,
-				33CD31448EB1CA2B1DACB15D5CC25B37 /* WXScrollActionSheetIconView.swift */,
 				2CABE97D7EF81CEDF2A5F6400CB6C29A /* WXScrollActionSheetItem.swift */,
 				FDDC197DB031A2D92D6BA3A2E709CD3A /* WXScrollActionSheetItemView.swift */,
 				AC59AF4B2D538B3D76C8753CA344B9B0 /* Pod */,
@@ -333,8 +327,6 @@
 				D77612954E2B99B98EAAC887D3C36B33 /* WXActionSheetScrollView.swift in Sources */,
 				365B9310F56617D4908334A66477B3B0 /* WXActionSheetStyle.swift in Sources */,
 				EA79C25A20A17BCFDF11AF148FAE0624 /* WXScrollActionSheet.swift in Sources */,
-				851C78F00AD48AA355EE16FD6D7EC9E0 /* WXScrollActionSheetContainerView.swift in Sources */,
-				CF577E1C3E1AF7B1393BAB66BFA916EA /* WXScrollActionSheetIconView.swift in Sources */,
 				2537D5D237658076E243AE8D1ADE22B3 /* WXScrollActionSheetItem.swift in Sources */,
 				8E5E78388B4DA2A337B9E40BB4BC1D12 /* WXScrollActionSheetItemView.swift in Sources */,
 			);
