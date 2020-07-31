@@ -83,14 +83,13 @@ extension WXActionSheet {
     private func commonInit() {
         backgroundView.frame = bounds
         backgroundView.alpha = 0.0
-        backgroundView.backgroundColor = style.appearance.dimmingBackgroundColor
+        addSubview(backgroundView)
+        
+        addSubview(containerView)
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
         tapGesture.delegate = self
         backgroundView.addGestureRecognizer(tapGesture)
-        addSubview(backgroundView)
-        
-        containerView.backgroundColor = style.appearance.containerBackgroundColor
-        addSubview(containerView)
     }
     
     @objc private func handleTapGesture(_ gesture: UITapGestureRecognizer) {
@@ -151,6 +150,8 @@ extension WXActionSheet {
             }
         }
         
+        backgroundView.backgroundColor = style.appearance.dimmingBackgroundColor
+        containerView.backgroundColor = style.appearance.containerBackgroundColor
         containerView.frame = CGRect(x: x, y: bounds.height, width: width, height: y)
         
         if roundTopCorners {

@@ -1,5 +1,5 @@
 PODS:
-  - WXActionSheet (0.6.0)
+  - WXActionSheet (0.6.1)
 
 DEPENDENCIES:
   - WXActionSheet (from `.`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  WXActionSheet: d8cc37cfac84c69c5ed201899b9e4912858008f9
+  WXActionSheet: 352ce15ab8a76f674c9b4c458c515cd3a286324c
 
 PODFILE CHECKSUM: cf175a83300f17f637c96303962467aab0582bca
 

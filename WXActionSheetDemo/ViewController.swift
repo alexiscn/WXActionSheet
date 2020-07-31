@@ -24,20 +24,22 @@ class ViewController: UITableViewController {
         case 0:
             showNormal()
         case 1:
-            showWithoutCancelButton()
+            showDarkStyle()
         case 2:
-            showButtonsWithImage()
+            showWithoutCancelButton()
         case 3:
-            print("...")
+            showButtonsWithImage()
         case 4:
-            showCustomTitleView()
+            print("...")
         case 5:
-            showInActionSheet()
+            showCustomTitleView()
         case 6:
-            customActionSheet()
+            showInActionSheet()
         case 7:
-            showActionSheetWithItemDesc()
+            customActionSheet()
         case 8:
+            showActionSheetWithItemDesc()
+        case 9:
             showScrollActionSheet()
         default:
             break
@@ -49,6 +51,24 @@ class ViewController: UITableViewController {
         //WXActionSheetStyle.lightAppearance.destructiveButtonTitleColor = .blue
         
         let actionSheet = WXActionSheet(cancelButtonTitle: "取消")
+        actionSheet.add(WXActionSheetItem(title: "发送给朋友", handler: { _ in
+            
+        }))
+        actionSheet.add(WXActionSheetItem(title: "收藏", handler: { _ in
+            
+        }))
+        actionSheet.add(WXActionSheetItem(title: "保存图片", handler: { _ in
+            
+        }))
+        actionSheet.add(WXActionSheetItem(title: "删除", handler: { _ in
+            
+        }, type: .destructive))
+        actionSheet.show()
+    }
+    
+    private func showDarkStyle() {
+        let actionSheet = WXActionSheet(cancelButtonTitle: "取消")
+        actionSheet.style = .dark
         actionSheet.add(WXActionSheetItem(title: "发送给朋友", handler: { _ in
             
         }))
