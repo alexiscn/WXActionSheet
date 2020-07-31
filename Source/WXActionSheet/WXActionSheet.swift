@@ -8,6 +8,8 @@
 
 import UIKit
 
+let LineHeight: CGFloat = 1.0/UIScreen.main.scale
+
 public class WXActionSheet: UIView {
     
     public var style: WXActionSheetStyle = {
@@ -27,8 +29,6 @@ public class WXActionSheet: UIView {
     private let backgroundView = UIView()
     
     private var items: [WXActionSheetItem] = []
-    
-    private let LineHeight: CGFloat = 1.0/UIScreen.main.scale
     
     private var cancelButtonTitle: String?
     

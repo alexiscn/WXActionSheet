@@ -179,6 +179,18 @@ class ViewController: UITableViewController {
     
     private func showScrollActionSheet() {
         let actionSheet = WXScrollActionSheet()
+        actionSheet.topItems = [
+            WXScrollActionSheetItem(item: .sendToFriend, icon: UIImage(named: "")),
+            WXScrollActionSheetItem(item: .sendToTimeline, icon: UIImage(named: "")),
+            WXScrollActionSheetItem(item: .favorite, icon: UIImage(named: "")),
+            WXScrollActionSheetItem(item: .openInSafari, icon: UIImage(named: "")),
+        ]
+        actionSheet.bottomItems = [
+            WXScrollActionSheetItem(item: .report, icon: UIImage(named: "")),
+            WXScrollActionSheetItem(item: .copyLink, icon: UIImage(named: "")),
+            WXScrollActionSheetItem(item: .refresh, icon: UIImage(named: "")),
+            WXScrollActionSheetItem(item: .searchInPage, icon: UIImage(named: "")),
+        ]
         actionSheet.delegate = self
         actionSheet.show()
     }
@@ -190,4 +202,35 @@ extension ViewController: WXScrollActionSheetDelegate {
         
     }
     
+}
+
+extension WXScrollActionSheetItem {
+    
+    convenience init(item: ScrollActionItem, icon: UIImage?) {
+        self.init(identifier: item.rawValue, title: item.title, iconImage: icon)
+    }
+}
+
+enum ScrollActionItem: String {
+    case sendToFriend
+    case sendToTimeline
+    case favorite
+    case openInSafari
+    case report
+    case copyLink
+    case refresh
+    case searchInPage
+    
+    var title: String {
+        switch self {
+        case .sendToFriend: return "发送给好友"
+        case .sendToTimeline: return "发送到朋友圈"
+        case .favorite: return "收藏"
+        case .openInSafari: return "在Safari中打开"
+        case .report: return "举报"
+        case .copyLink: return "复制链接"
+        case .refresh: return "刷新"
+        case .searchInPage: return "搜索页面内容"
+        }
+    }
 }

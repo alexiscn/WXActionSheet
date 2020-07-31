@@ -32,8 +32,6 @@ public class WXScrollActionSheet: UIView {
     
     private var containerView: UIView!
     
-    private var bottomPaddingView: UIView!
-    
     private var cancelButton: UIButton!
     
     public var titleView: UIView?
@@ -49,6 +47,10 @@ public class WXScrollActionSheet: UIView {
     
     /// A Boolean value indicating whether dismiss self when click item. The default value is `true`.
     public var dismissOnClickItem: Bool = true
+    
+    fileprivate var safeInsets: UIEdgeInsets {
+        return UIApplication.shared.keyWindow?.safeAreaInsets ?? .zero
+    }
     
     public init(title: String = "", topItems: [WXScrollActionSheetItem] = [], bottomItems: [WXScrollActionSheetItem] = []) {
         self.title = title
@@ -73,67 +75,62 @@ public class WXScrollActionSheet: UIView {
         addSubview(containerView)
         
         titleLabel = UILabel()
-        
-        bottomPaddingView = UIView()
-        
-        containerView.addSubview(bottomPaddingView)
+        containerView.addSubview(titleLabel)
     }
     
     private func buildUI() {
-//        var offsetY: CGFloat = 0.0
-//        titleLabel.font = UIFont.systemFont(ofSize: 10)
-//        titleLabel.frame = CGRect(x: 10, y: 16.0, width: bounds.width - 20, height: 14.0)
-//        titleLabel.textColor = UIColor(white: 0, alpha: 0.5)
-//        titleLabel.text = title
-//        titleLabel.textAlignment = .center
-//        containerView.addSubview(titleLabel)
-//
-//        let topScrollViewFrame = CGRect(x: 0, y: 54, width: bounds.width, height: 108)
-//        let topScrollView = WXActionSheetScrollView(items: topItems, frame: topScrollViewFrame)
-//        topScrollView.itemDelegate = delegate
-//        containerView.addSubview(topScrollView)
-//
-//        offsetY = 54.0 + 108.0
-//
-//        if bottomItems.count > 0 {
-//
-//            let separtorLine = UIView()
-//            separtorLine.frame = CGRect(x: 12.0, y: offsetY, width: bounds.width - 24.0, height: Constants.lineHeight)
-//            separtorLine.backgroundColor = UIColor(white: 0, alpha: 0.1)
-//            containerView.addSubview(separtorLine)
-//
-//            offsetY += 15
-//
-//            let bottomScrollViewFrame = CGRect(x: 0, y: offsetY, width: bounds.width, height: 108.0)
-//            let bottomScrollView = WXActionSheetScrollView(items: bottomItems, frame: bottomScrollViewFrame)
-//            bottomScrollView.itemDelegate = delegate
-//            containerView.addSubview(bottomScrollView)
-//
-//            offsetY += 108.0
-//        }
-//
-//        offsetY += 15.0
-//
-//        let cancelButton = UIButton(type: .custom)
-//        cancelButton.backgroundColor = .white
-//        cancelButton.setTitle(cancelButtonTitle, for: .normal)
-//        cancelButton.setTitleColor(UIColor(white: 0, alpha: 0.9), for: .normal)
-//        containerView.addSubview(cancelButton)
-//        cancelButton.frame = CGRect(x: 0, y: offsetY, width: bounds.width, height: 56.0 + Constants.bottomInset)
-//        cancelButton.addTarget(self, action: #selector(handleCancelButtonClicked), for: .touchUpInside)
-//
-//        offsetY += (56.0 + Constants.bottomInset)
-//        if Constants.iPhoneX {
-//            let bottomInset = Constants.bottomInset
-//            cancelButton.titleEdgeInsets = UIEdgeInsets(top: -bottomInset/2, left: 0, bottom: bottomInset/2, right: 0)
-//        }
-//
-//        containerView.frame = CGRect(x: 0, y: bounds.height, width: bounds.width, height: offsetY)
-//
-//        let blurView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-//        blurView.frame = containerView.bounds
-//        containerView.addSubview(blurView)
-//        containerView.sendSubviewToBack(blurView)
+        var offsetY: CGFloat = 0.0
+        titleLabel.font = UIFont.systemFont(ofSize: 10)
+        titleLabel.frame = CGRect(x: 10, y: 16.0, width: bounds.width - 20, height: 14.0)
+        titleLabel.textColor = UIColor(white: 0, alpha: 0.5)
+        titleLabel.text = title
+        titleLabel.textAlignment = .center
+        containerView.addSubview(titleLabel)
+
+        let topScrollViewFrame = CGRect(x: 0, y: 54, width: bounds.width, height: 108)
+        let topScrollView = WXActionSheetScrollView(items: topItems, frame: topScrollViewFrame)
+        //topScrollView.itemDelegate = delegate
+        containerView.addSubview(topScrollView)
+
+        offsetY = 54.0 + 108.0
+
+        if bottomItems.count > 0 {
+
+            let separtorLine = UIView()
+            separtorLine.frame = CGRect(x: 12.0, y: offsetY, width: bounds.width - 24.0, height: LineHeight)
+            separtorLine.backgroundColor = UIColor(white: 0, alpha: 0.1)
+            containerView.addSubview(separtorLine)
+
+            offsetY += 15
+
+            let bottomScrollViewFrame = CGRect(x: 0, y: offsetY, width: bounds.width, height: 108.0)
+            let bottomScrollView = WXActionSheetScrollView(items: bottomItems, frame: bottomScrollViewFrame)
+            //bottomScrollView.itemDelegate = delegate
+            containerView.addSubview(bottomScrollView)
+            offsetY += 108.0
+        }
+
+        offsetY += 15.0
+
+        let cancelButton = UIButton(type: .custom)
+        cancelButton.backgroundColor = .white
+        cancelButton.setTitle("取消", for: .normal)
+        cancelButton.setTitleColor(UIColor(white: 0, alpha: 0.9), for: .normal)
+        containerView.addSubview(cancelButton)
+        cancelButton.frame = CGRect(x: 0, y: offsetY, width: bounds.width, height: 56.0 + safeInsets.bottom)
+        cancelButton.addTarget(self, action: #selector(handleCancelButtonClicked), for: .touchUpInside)
+
+        offsetY += (56.0 + safeInsets.bottom)
+        
+        let bottomInset = safeInsets.bottom
+        cancelButton.titleEdgeInsets = UIEdgeInsets(top: -bottomInset/2, left: 0, bottom: bottomInset/2, right: 0)
+
+        containerView.frame = CGRect(x: 0, y: bounds.height, width: bounds.width, height: offsetY)
+
+        let blurView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        blurView.frame = containerView.bounds
+        containerView.addSubview(blurView)
+        containerView.sendSubviewToBack(blurView)
     }
     
     public func show() {
@@ -163,6 +160,20 @@ public class WXScrollActionSheet: UIView {
     
     public func reloadData() {
         
+    }
+    
+    @objc private func handleCancelButtonClicked() {
+        dismiss()
+    }
+}
+
+// MARK: - UIGestureRecognizerDelegate
+extension WXScrollActionSheet: UIGestureRecognizerDelegate {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if touch.view == self.containerView {
+            return false
+        }
+        return true
     }
 }
 
