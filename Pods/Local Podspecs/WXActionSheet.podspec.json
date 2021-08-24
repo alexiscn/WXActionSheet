@@ -1,13 +1,13 @@
 {
   "name": "WXActionSheet",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "license": {
     "type": "MIT"
   },
   "requires_arc": true,
   "source": {
     "git": "https://github.com/alexiscn/WXActionSheet.git",
-    "tag": "0.6.1"
+    "tag": "0.6.2"
   },
   "summary": "WXActionSheet",
   "homepage": "https://github.com/alexiscn/WXActionSheet",
